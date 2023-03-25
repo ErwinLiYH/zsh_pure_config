@@ -15,12 +15,10 @@ zstyle :prompt:pure:execution_time color '#4774fc'
 
 # ...
 
-myscript="/home/kylis/Myscripts"
 alias cdd='cd /home/kylis/Desktop'
 alias cdh='cd ~'
 alias cds='cd ${myscript}'
 alias cdg='cd /home/kylis/Desktop/git'
-alias scpfuck='python ${myscript}/scp_batch.py'
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit -m'
@@ -29,3 +27,7 @@ alias update='sudo apt update'
 alias upgrade='sudo apt upgrade'
 alias search='apt search'
 alias install='sudo apt install'
+#sudo fallocate -l 10G /swap1
+#sudo chmod 600 /swap1
+#sudo mkswap /swap1
+alias so='sudo swapon /swap1'
